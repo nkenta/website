@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Nkenta Uchechkwu Ferdinand">
+    <title>Course</title>
+    <link rel="icon" href="images/fav.jpg">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body id="siteMode">
+    <header id="logo">
+        <img src="images/logo.png" alt="sitelogo">
+    </header>
+
+    <nav class="topnav" id="responsiveNav">
+        <div id="moveCat">
+            <a href="index.html">Home</a>
+            <a href="course.html" class="active">Course</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <span id="applyRight">
+                    <a href="apply.html">Apply</a>
+                </span>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <main id="courseWrap">
+        <fieldset id="courseFieldset">
+            <div>
+                <h3>Welcome to the school course list</h3>
+                <p>Because every individual have diffrent desires and diffrent talents for things, we've made it simple for you to choose a course. Kindly use the suggestion plan to get started. </p>
+
+                <select onchange='select()' id='suggest'>
+                    <option Value="You've not made any selection" selected disabled="disabled">Choose From the List</option>
+                    <option value="We suggest Business Management, Finance, or Accounting.">Management</option>
+                    <option value="We suggest CIT, Electrical Engineering, Mechanical Engineering, or Web Development.">
+                        Technology</option>
+                    <option value="We Suggest Health Science or Nursing Family Skills.">Health</option>
+                    <option value="We suggest Theatre Art.">Art</option>
+                </select>
+                <div>
+                    <button onclick="showSuggestion()" id="sugBtnA">Suggest</button>
+                </div>
+
+                <p id="sugFeed">Still not satisfied with our suggestion? Here are full list of available courses.</p>
+                <div id="displayCourse"></div>
+                <button type="button" onclick="ajaxJson()" id="sugBtnB">List</button>
+                <button type="button" onclick="closeajaxJson()" id="sugBtnC">Close</button>
+                <button type="button" id="applyBtn"><a href="apply.html">Apply</a></button>
+            </div>
+        </fieldset>
+    </main>
+
+    <footer>
+        <p>Copyright © 2019 | Ever Green High School Enugu, Nigeria.<br>
+            <a href="policy.html">Terms & Privacy</a> </p>
+
+        <div>
+            <p>Change site Background mode</p>
+            <button onclick="DchangeColor('siteMode','#2d2d2d')" id="siteModeBtnD"><span id="adjusD">Dark Mode</span></button>
+            <button onclick="LchangeColor('siteMode','#ffffff')" id="siteModeBtnL"><span id="adjusL">Light Mode</span></button>
+            <hr id="sitemodehr">
+        </div>
+        <p>Designed by - Uchechukwu Ferdinand Nkenta</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script>
+        ajaxJson();
+    </script>
+</body>
+
+</html>

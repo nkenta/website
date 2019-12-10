@@ -1,0 +1,18 @@
+{
+    "courseList1": { "course": "Accounting" },
+    "courseList2": { "course": "Business Management" },
+    "courseList3": { "course": "Computer Information Technology" },
+    "courseList4": { "course": "Design & Construction Management" },
+    "courseList5": { "course": "Electrical Engineering" },
+    "courseList6": { "course": "Finance" },
+    "courseList7": { "course": "General Science" },
+    "courseList8": { "course": "Health Science" },
+    "courseList9": { "course": "International Studies" },
+    "courseList10": { "course": "Language" },
+    "courseList11": { "course": "Mechanical Engineerings" },
+    "courseList12": { "course": "Nursing Family Skills" },
+    "courseList13": { "course": "Recreational Management" },
+    "courseList14": { "course": "Science Education" },
+    "courseList15": { "course": "Theatre Arts" },
+    "courseList16": { "course": "Web Design And Development" }
+}

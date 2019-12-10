@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Nkenta Uchechkwu Ferdinand">
+    <title>Contact</title>
+    <link rel="icon" href="images/fav.jpg">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body id="siteMode">
+    <header id="logo">
+        <img src="images/logo.png" alt="sitelogo">
+    </header>
+
+    <nav class="topnav" id="responsiveNav">
+        <div id="moveCat">
+            <a href="index.html">Home</a>
+            <a href="course.html">Course</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+
+        <span id="applyRight">
+                    <a href="apply.html">Apply</a>
+                </span>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <div>
+        <h1>Ever Green Support Form</h1>
+        <p>
+            For live chat or one on one conversation, please contact the Ever Green Support Center using the request button</p>
+
+        <span id="conRequest"></span><br>
+        <button type="button" onclick="loadInfo()" id="conBtm">Request</button>
+    </div>
+
+    <main>
+        <div class="container" id="siteBody">
+
+
+            <div class="form-popup" id="formSubmit">
+                <form class="form-container" method="get" action="msgSent.html">
+                    <div class="row">
+                        <div class="col-A">
+                            <label for="name">Your Name:</label>
+                        </div>
+                        <div class="col-B">
+                            <input type="text" id="name" name="Yourname" placeholder="name please" required>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-A">
+                            <label for="lname">Email Address:</label>
+                        </div>
+                        <div class="col-B">
+                            <input type="text" id="lname" name="lastname" placeholder="valid email" required>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-A">
+                            <p>Nature of your inquiry?</p>
+                        </div>
+                        <div class="col-B">
+                            <select id="country" name="Inquiry">
+                                <option selected disabled="disabled">Choose item from the list</option>
+                            <option value="Admission">Admission</option>
+                            <option value="honor code">Honor Code</option>
+                            <option value="housing">Housing</option>
+                            <option value="billing">Billing</option>
+                            <option value="something else">Something else</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-A">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-B ">
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" onclick="siteColor()" value="Submit">
+                    </div>
+
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+            <button class="open-button" onclick="openForm()">Open Form</button>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2019 | Ever Green High School Enugu, Nigeria.<br>
+            <a href="policy.html">Terms & Privacy</a> </p>
+
+        <div>
+            <p>Change site Background mode</p>
+            <button onclick="DchangeColor('siteMode','#2d2d2d')" id="siteModeBtnD"><span id="adjusD">Dark Mode</span></button>
+            <button onclick="LchangeColor('siteMode','#ffffff')" id="siteModeBtnL"><span id="adjusL">Light Mode</span></button>
+            <hr id="sitemodehr">
+        </div>
+        <p>Designed by - Uchechukwu Ferdinand Nkenta</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script>
+        ajaxJson();
+    </script>
+</body>
+
+</html>

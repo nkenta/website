@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Nkenta Uchechkwu Ferdinand">
+    <title>Ever Green | Home</title>
+    <link rel="icon" href="images/fav.jpg">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="siteMode">
+    <header id="logo">
+        <img src="images/logo.png" alt="sitelogo">
+    </header>
+
+    <nav class="topnav" id="responsiveNav">
+        <div id="moveCat">
+            <a href="index.html" class="active">Home</a>
+            <a href="course.html">Course</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <span id="applyRight">
+                    <a href="apply.html">Apply</a>
+                </span>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <div class="imgSlideShow-container">
+        <div class="imgSlide fade">
+            <img src="images/enroll.png" alt="slideimg">
+        </div>
+
+        <div class="imgSlide fade">
+            <img src="images/student_dev.jpg" alt="slideimg">
+        </div>
+
+        <div class="imgSlide fade">
+            <img src="images/student_health.jpg" alt="slideimg">
+        </div>
+    </div>
+    <br>
+
+    <div>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+    <main>
+        <h1>Welcome to Admissions</h1>
+        <hr>
+        <div id="videoPad">
+
+            <video controls>
+                <source src="video/Back_To_School.mp4" type="video/mp4">
+                <p>Sorry! Your browser doesn't support HTML5</p>
+            </video><br>
+            <span><strong style="color: seagreen">READY?</strong> Get Back to School</span>
+        </div>
+        <hr>
+
+
+        <div id="countdown">
+            <div>
+                <span class="days"></span>
+                <div class="timetext">Days</div>
+            </div>
+            <div>
+                <span class="hours"></span>
+                <div class="timetext">Hours</div>
+            </div>
+            <div>
+                <span class="minutes"></span>
+                <div class="timetext">Minutes</div>
+            </div>
+            <div>
+                <span class="seconds"></span>
+                <div class="timetext">Seconds</div>
+            </div>
+        </div>
+
+        <div id="transdGo">
+            Two weeks more to
+            <p id="goTrans">Go!
+            </p> We cant wait to see you join us. <br> Start the Application Process
+
+            <p id="applyNow">
+                <a href="apply.html">Apply Now</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2019 | Ever Green High School Enugu, Nigeria.<br>
+            <a href="policy.html">Terms & Privacy</a> </p>
+
+        <div>
+            <p>Change site Background mode</p>
+            <button onclick="DchangeColor('siteMode','#2d2d2d')" id="siteModeBtnD"><span id="adjusD">Dark Mode</span></button>
+            <button onclick="LchangeColor('siteMode','#ffffff')" id="siteModeBtnL"><span id="adjusL">Light Mode</span></button>
+            <hr id="sitemodehr">
+        </div>
+        <p>Designed by - Uchechukwu Ferdinand Nkenta</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script>
+        ajaxJson();
+    </script>
+</body>
+
+</html>

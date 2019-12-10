@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Nkenta Uchechkwu Ferdinand">
+    <title>Apply</title>
+    <link rel="icon" href="images/fav.jpg">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body id="siteMode">
+    <header id="logo">
+        <img src="images/logo.png" alt="sitelogo">
+    </header>
+
+    <nav class="topnav" id="responsiveNav">
+        <div id="moveCat">
+            <a href="index.html">Home</a>
+            <a href="course.html">Course</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <span id="applyRight">
+            <a href="apply.html" class="active">Apply</a>
+        </span>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <main>
+        <h1>Apply to Ever Green</h1>
+
+        <h2>What type of Applicant am I?</h2>
+        <div id="applyArticle">
+            <p>Ever Green offers a variety of enrollment options. To better help you understand the enrollment option that will best fit your needs. Please click on the course page view all courses. If you have any additional questions. You can email us: admissions@evergreen.edu,
+                or give us a call at 208-496-1300.</p>
+        </div>
+        <form method="get" action="enrollMsg.html">
+            <div class="container">
+                <h1>Student Enrollment Form</h1>
+                <p>Please fill in this form to enroll into Ever Green.</p>
+                <hr>
+
+                <p><b>FirstName</b></p><br>
+                <input type="text" placeholder="Enter your first name" name="firstname" required>
+
+                <br>
+                <p><b>LastName</b></p><br>
+                <input type="text" placeholder="Enter your last name" name="lastname" required>
+
+                <br>
+                <p><b>Email</b></p><br>
+                <input type="text" placeholder="Enter a valid email address" name="email" required>
+                <br><strong>Note:</strong><i> We will use this email to contact you. Please ensure it is valid and
+                    yours.</i><br>
+
+                <div>
+                    <p><b>Date of birth</b></p><br>
+                    <input type="date" name="birthday">
+                </div>
+
+                <div><br>
+                    <p><b>Select Semester</b></p><br>
+                    <input type="radio" name="year" value="winter" checked id="radioTransform"> Winter<br>
+                    <input type="radio" name="year" value="spring"> Spring<br>
+                    <input type="radio" name="year" value="fall"> Fall
+                </div><br>
+
+                <p><b>Location</b></p>
+                <br><input type="text" placeholder="Enter your current location" name="lastname" required>
+
+                <br>
+                <p><b>Select Course</b></p><br>
+                <select>
+                    <option selected disabled="disabled">Choose </option>
+                    <option value="accounting">Accounting</option>
+                    <option value="business management">Business Management</option>
+                    <option value="computer information technology">Computer Information Technology
+                    </option>
+                    <option value="design & construction management">Design & Construction Management
+                    </option>
+                    <option value="electrical engineering">Electrical Engineering</option>
+                    <option value="finance">Finance</option>
+                    <option value="general science">General Science</option>
+                    <option value="health science">Health Science</option>
+                    <option value="international studies">International Studies</option>
+                    <option value="language">Language</option>
+                    <option value="mechanical engineering">Mechanical Engineerings</option>
+                    <option value="nursing family skills">Nursing Family Skills</option>
+                    <option value="recreational management">Recreational Management</option>
+                    <option value="science education">Science Education</option>
+                    <option value="theatre arts">Theatre Arts</option>
+                    <option value="web design and development">Web Design And Development</option>
+                </select>
+
+                <br> <br><strong>Create an account username and password</strong>
+                <fieldset id="createsUandP">
+                    <fieldset>
+                        <div id="usersBox"></div>
+                    </fieldset><br>
+                    <div>Username:<br> <input id="userName" type="text"> </div>
+                    <div>Password:<br> <input id="password" type="text"></div>
+                    <input type="button" onclick="createUandP()" value="Create">
+                    <input type="button" onclick="deleteUandP()" value="Delete">
+                    <p><strong>Note:</strong> When done with username and password creation, click on generate to get your security number.</p>
+
+
+                    <div>
+                        <button type="button" onclick="forLoop()">Generate</button><br>
+                        <hr>
+                        <p>Keep this number [<span id="forloop"></span>] Safe.</p>
+                    </div>
+                </fieldset>
+
+                <p>By submitting your application, you agree to our <a href="policy.html" style="color:dodgerblue">Terms
+                        &
+                        Privacy</a></p>
+
+                <div class="clearfix">
+                    <button type="submit" class="subAplBtn">Submit Application</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Copyright © 2019 | Ever Green High School Enugu, Nigeria.<br>
+            <a href="policy.html">Terms & Privacy</a> </p>
+
+        <div>
+            <p>Change site Background mode</p>
+            <button onclick="DchangeColor('siteMode','#2d2d2d')" id="siteModeBtnD"><span id="adjusD">Dark Mode</span></button>
+            <button onclick="LchangeColor('siteMode','#ffffff')" id="siteModeBtnL"><span id="adjusL">Light Mode</span></button>
+            <hr id="sitemodehr">
+        </div>
+        <p>Designed by - Uchechukwu Ferdinand Nkenta</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script>
+        ajaxJson();
+    </script>
+</body>
+
+</html>
